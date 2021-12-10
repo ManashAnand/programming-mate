@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Mate</title>
+    <style>
+        body {
+            background-image: url("lightmode.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 3px 8px 0 whitesmoke, 0 4px 5px 0 white;
+            border: 2px solid whitesmoke;
+            color: darkorange;
+            padding: 13px;
+            border-radius: 50px;
+            flex-wrap: wrap;
+        }
+
+        #txt {
+            color: darkorange;
+            font-size: 20px;
+            text-shadow: 3px 4px blue, 3px 5px purple;
+        }
+
+        #similarity {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            flex-wrap: wrap;
+        }
+
+        .same {
+            color: chartreuse;
+            border: 2px solid whitesmoke;
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px 0 whitesmoke, 0 4px 5px 0 white;
+        }
+
+        #first {
+            background-image: url("coding.jpg");
+            background-attachment: scroll;
+            background-size: cover;
+            opacity: 0.4;
+        }
+
+        #first:hover {
+            opacity: 1;
+        }
+
+        #second {
+            background-image: url("hobby.jpg");
+            background-attachment: scroll;
+            background-size: cover;
+            opacity: 0.4;
+        }
+
+        #second:hover {
+            opacity: 1;
+        }
+
+        #third {
+            background-image: url("age.jpg");
+            background-attachment: scroll;
+            background-size: cover;
+            opacity: 0.4;
+        }
+
+        #third:hover {
+            opacity: 1;
+        }
+
+        #fourth {
+            background-image: url("other.jpg");
+            background-attachment: scroll;
+            background-size: cover;
+            opacity: 0.4;
+        }
+
+        #fourth:hover {
+            opacity: 1;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #login {
+            color: white;
+            text-shadow: 3px 5px 2px red;
+            height: 30rem;
+            width: 45rem;
+            border: 2px solid whitesmoke;
+            border-radius: 10rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #profile {
+            color: white;
+            text-shadow: 3px 5px 2px red;
+            height: 30rem;
+            width: 25rem;
+            border: 2px solid whitesmoke;
+            border-radius: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .identical {
+            margin: 2rem;
+            box-shadow: 0 3px 8px 0 rgb(192, 192, 192), 0 4px 5px 0 white;
+        }
+
+        #photo {
+            border: 2px solid whitesmoke;
+            border-radius: 50px;
+            box-shadow: 0 3px 8px 0 rgb(192, 192, 192), 0 4px 5px 0 whitesmoke;
+            height: 100px;
+            width: 115px;
+            background-image: url("me.jpeg");
+            background-attachment: scroll;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="head"> HOME </div>
+        <div class="head"> DETAILS </div>
+        <div class="head"> PROFILE </div>
+        <div class="head"> CONTACT US </div>
+        <div class="head"> HELP </div>
+        <div class="head">
+            <button id="light"> LIGHT </button>
+            <button id="dark"> DARK </button>
+        </div>
+    </div>
+
+    <marquee id="txt"><b>A site for programmer to find their programming mate<br>Created by MANASH ANAND</b></marquee>
+    <div id="similarity">
+        <div id="first" class="same"> preffered language </div>
+        <div id="second" class="same"> HOBBY </div>
+        <div id="third" class="same"> AGE </div>
+        <div id="fourth" class="same"> OTHER QUESTIONS </div>
+    </div>
+    <div id="container">
+        <div id="login" class="identical">
+            <div>LOGIN</div><br>
+            <div><input type="text" placeholder="enter you name"> </div><br>
+            <div><input type="email" placeholder="enter you mail"> </div><br>
+            <div><input type="password" placeholder="enter you password"> </div><br>
+            <div>GENDER: male<input type="radio">
+                female <input type="radio"><br>
+
+            </div><br>
+            <input type="submit"><br>
+            <div><input type="checkbox">I have read all agreement</div>
+              <button id="signnin">  </button>
+        </div>
+
+      
+
+
+
+        <div id="profile" class="identical">
+            <div id="photo"> </div><br>
+            <div>NAME:- Manash Anand</div><br>
+            <div>AGE:- 19 years</div><br>
+            <div>Coding Skills:- <ul>
+                    <li>HTML / CSS</li>
+                    <li>Basic of JS</li>
+                    <li>Basic of C </li>
+                </ul>
+            </div><br>
+
+            <div>Hobby:- <ul>
+                    <li>CODING</li>
+                    <li>Dreaming</li>
+                    <li>playing with DOGS</li>
+                </ul>
+            </div><br>
+        </div>
+
+<script>
+document.getElementById('dark').addEventListener('click',function(e){document.body.style.backgroundImage = "url('darkmode.jpg')";})
+document.getElementById('light').addEventListener('click',function(e){document.body.style.backgroundImage = "url('lightmode.jpg')";})
+
+
+
+
+</script>
+    </body>
+</html>
